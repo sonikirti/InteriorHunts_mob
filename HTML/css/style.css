@@ -98,21 +98,25 @@ p { font-size: 11px; line-height: normal; color: #fff; font-family: arial; font-
 .commentsection input { width: 540px; height: 40px; display: block; padding: 5px; border: 1px solid #cccccc; border-radius: 0 !important; box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; -webkit-box-shadow: none; }
 .sendbtn { width: 110px; height: 50px; display: block; background: #ea4221; color: #ffffff !important; padding: 10px 0 0 0; font-weight: normal; font-size: 24px; text-align: center; margin: 30px auto 0; border-radius: 5px; }
 .sectionlabel { font-family: arial; font-size: 30px; line-height: normal; margin: 0 0 20px 0; padding: 0px 0; display: block; color: #ea4221; margin-top: 0px; text-shadow: none; }
+
 .filterproperty ul li input[type=checkbox].css-checkbox { position: absolute; overflow: hidden; clip: rect(0 0 0 0); height: 1px; width: 1px; margin: -1px; padding: 0; border: 0; }
-.filterproperty ul li input[type=checkbox].css-checkbox + label.css-label { padding-left: 45px; height: 23px; display: inline-block; line-height: 12px; background-repeat: no-repeat; background-position: 0 0; font-size: 24px; vertical-align: middle; cursor: pointer; }
-.filterproperty ul li input[type=checkbox].css-checkbox:checked + label.css-label { background-position: 0 -25px; }
+.filterproperty ul li input[type=checkbox].css-checkbox + label.css-label { padding-left: 35px; height: 23px; display: inline-block; line-height: normal; background-repeat: no-repeat; background-position: 0 0; font-size: 22px; vertical-align: middle; cursor: pointer; }
+.filterproperty ul li input[type=checkbox].css-checkbox:checked + label.css-label { background-position: 0 -38px; }
 .filterproperty ul li .css-label { background: url(../image/cheakboximg.png) no-repeat; }
-.filterproperty ul li { list-style: none; color: #666666; min-width: 253px; float: left; display: block; font-family: arial; padding-bottom: 24px; }
+
+
+.filterproperty ul li { list-style: none; color: #666666; min-width: 50%; float: left; display: block; font-family: arial; padding-bottom: 24px; }
 .filterproperty ul:after { display: table; clear: both; content: ""; }
-.searchslide { background: #ffffff; padding: 30px; width: 475px; }
+
+.searchslide { background: #ffffff; padding: 24px; width: 475px; }
 .searchinputpan input { width: 390px; height: 45px; display: block; margin: 20px 0; padding: 5px; background: #f1f1f1; border: 1px solid #cccccc; border-radius: 0; box-shadow: none; }
 .slidetab ul { margin: 0 0 30px 0; padding: 0; }
-.slidetab ul li { width: 412px; height: 80px; border-bottom: 1px solid #cccccc; background: #ffffff; }
-.slidetab ul li.active { background: #ea4221; }
+.slidetab ul li { width: 100%; height: 80px; border-bottom: 1px solid #cccccc; background: #ffffff; }
+.slidetab ul li.active { background: #ea4221; border-bottom:none; }
 .slidetab ul li.active a, .slidetab ul li.active a:hover { color: #ffffff; }
-.slidetab ul li a { color: #383838; font-size: 24px; font-family: arial; padding: 22px 10px 0 10px; display: block; }
+.slidetab ul li a { color: #383838; font-size: 24px; font-family: arial; padding: 0px 10px 0 20px; display: block; height:80px; line-height:80px; vertical-align:middle; font-weight:normal; }
 .slidetab ul li a:hover { color: #ea4221; }
-.slidetab ul li a i { text-align: right; font-size: 24px; float: right; display: block; }
+.slidetab ul li a i { text-align: right; font-size: 24px; float: right; display: block; height:80px; line-height:80px; vertical-align:middle; }
 .servicesection li { width: 55%; float: left; font-size: 16px; font-family: arial; line-height: 45px; font-weight: normal; }
 .servicesection li:nth-child(even) { width: 45%; }
 .commentsection { margin: 20px 0 0 0; padding: 20px; display: block; background: #ffffff; width: 580px; height: 240px; border-top: 5px solid #e95938; box-shadow: 0px 2px 8px #cccccc; -moz-box-shadow: 0px 2px 8px #cccccc; -ms-box-shadow: 0px 2px 8px #cccccc; -o-box-shadow: 0px 2px 8px #cccccc; -webkit-box-shadow: 0px 2px 8px #cccccc; border-radius: 5px; }
