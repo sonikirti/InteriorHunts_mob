@@ -15,6 +15,9 @@
     <!-- jquery mobile css -->
     <link rel='stylesheet' href='http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css' type='text/css' media='all' />
     
+    <!-- Slider CSS -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+    
     <!-- CUSTOM STYLE CSS -->
     <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
     
@@ -27,6 +30,7 @@
     <!-- jquery mobile js -->
     <script type='text/javascript' src='http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js'></script>
 
+  
 
 </head>
 
@@ -51,13 +55,66 @@
 
 <div class="main_container">
 
-<div class="company_product_img"> 
- <a href="#"> <img src="image/company_product.jpg" alt=""/> </a>
-  </div>
-  
-  <div class="product_thumb">
-  <img src="image/thumbs.jpg" alt=""/>
-  </div>
+
+      <section class="slider">
+        <div id="slider" class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="image/company_product1.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/company_product2.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	   <img src="image/company_product3.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	   <img src="image/company_product4.jpg" alt=""/>
+  	    		</li>
+                <li>
+  	    	    <img src="image/company_product5.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/company_product6.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	   <img src="image/company_product7.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	   <img src="image/company_product8.jpg" alt=""/>
+  	    		</li>
+          </ul>
+        </div>
+        <div id="carousel" class="flexslider">
+          <ul class="slides">
+            <li>
+  	    	    <img src="image/thumb_1.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/thumb_2.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	   <img src="image/thumb_3.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/thumb_4.jpg" alt=""/>
+  	    		</li>
+                <li>
+  	    	    <img src="image/thumb_5.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/thumb_6.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	   <img src="image/thumb_7.jpg" alt=""/>
+  	    		</li>
+  	    		<li>
+  	    	    <img src="image/thumb_8.jpg" alt=""/>
+  	    		</li>
+          </ul>
+        </div>
+      </section>
+
 
 
 <p class="short_detail"> An established and prestigious Interior Decoration Company, professionally managed to provide all your needs in line of interior decoration. An expert in interior design located at the heart of Dubai, dedicated to design and create interiors of exceptional quality and beauty. </p>
@@ -116,6 +173,45 @@
 </div>
 
     </div>
+    
+
+
+
+  <!-- FlexSlider -->
+    <script type='text/javascript' src='js/flexslider.js'></script>
+    
+
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('#carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 120,
+        itemMargin: 30,
+        asNavFor: '#slider'
+      });
+
+      $('#slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: "#carousel",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+
+    
+    
+    
     
 </body>
 </html>

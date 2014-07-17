@@ -128,3 +128,5 @@ p { font-size: 11px; line-height: normal; color: #fff; font-family: arial; font-
 .commentsection h1 { color: #e95938; font-family: arial; font-size: 30px; font-weight: normal; margin: 0 0 30px 0; padding: 0; text-align: center; }
 .commentsection input { width: 540px; height: 40px; display: block; padding: 5px; border: 1px solid #cccccc; border-radius: 0 !important; box-shadow: none !important; -moz-box-shadow: none !important; -ms-box-shadow: none !important; -o-box-shadow: none !important; -webkit-box-shadow: none !important; }
 .sendbtn { width: 110px; height: 50px; display: block; background: #e95938; color: #ffffff !important; padding: 10px 0 0 0; font-weight: normal; font-size: 24px; text-align: center; margin: 30px auto 0; border-radius: 5px; }
+
+#carousel .slides li { margin-right:32px;}
