@@ -43,16 +43,16 @@ p { font-size: 11px; line-height: normal; color: #fff; font-family: arial; font-
 .header_container { min-width: 640px; margin: 0; padding: 0px 0px; }
 .header_container .nav-icons { height: 90px; text-align: center; display: block; padding: 0 50px; }
 .header_container i { color: #ffffff; font-size: 40px; line-height: 90px; vertical-align: middle; }
-.header_container ul { padding: 0; margin: 0 26px; display: block; }
+.header_container ul { padding: 0; margin: 0 auto; width:310px; display: block; }
 .header_container ul li { float: left; display: block; height: 90px; padding: 0 20px; }
 .header_container ul li a { color: #ffffff; font-size: 30px; font-family: arial; text-shadow: none; line-height: 90px; vertical-align: middle; display: block; font-style: normal; font-weight: normal; }
 .header_container ul li a:hover { color: #ffffff; }
 .header_container ul li.active, .header_container a.active { border-bottom: 10px solid #e95938; }
 .header_container ul li.divider { height: 35px; width: 1px; display: block; background: #FFFFFF; margin: 27px 10px; float: left; padding: 0 !important; }
-.productbg { min-width: 320px; background: #ffffff; margin: 0 auto 30px; padding: 10px; box-shadow: 0px 2px 8px #cccccc; -moz-box-shadow: 0px 2px 8px #cccccc; -ms-box-shadow: 0px 2px 8px #cccccc; -o-box-shadow: 0px 2px 8px #cccccc; -webkit-box-shadow: 0px 2px 8px #cccccc; border-radius: 5px; }
+.productbg { min-width: 320px; background: #ffffff; margin: 0 auto 30px; padding: 10px; box-shadow: 0px 2px 8px #cccccc; -moz-box-shadow: 0px 2px 8px #cccccc; -ms-box-shadow: 0px 2px 8px #cccccc; -o-box-shadow: 0px 2px 8px #cccccc; -webkit-box-shadow: 0px 2px 8px #cccccc; border-radius: 5px; width:100%; }
 .imagepan { width: 250px; height: 185px; text-align: center; border: 1px solid #eeeeee; margin: 0 20px 0 0px; overflow: hidden; }
 .productbg h1 { font-size: 24px; color: #e95938; font-family: arial; }
-.productbg p { font-size: 16px; color: #000000; min-width: 286px; font-family: arial; float: left; height: 130px; margin: 5px 0 0 0; }
+.productbg p { font-size: 16px; color: #000000; min-width: 286px; width:70%; width: calc( 100% - 270px); font-family: arial; float: left; height: 130px; margin: 5px 0 0 0; }
 .product_option ul { margin: 0; padding: 0; }
 .product_option ul li { float: left; display: block; width: 85px; }
 .product_option ul li a { color: #4a4a4a; font-size: 16px; font-family: arial; font-weight: normal; }
@@ -62,7 +62,7 @@ p { font-size: 11px; line-height: normal; color: #fff; font-family: arial; font-
 /* 01 - PRODUCT PAGE
 /* ===============================================*/
 
-.product_productbg { min-width: 270px; width:45%;height: 280px; background: #ffffff; box-shadow: 0px 2px 8px #cccccc; -moz-box-shadow: 0px 2px 8px #cccccc; -ms-box-shadow: 0px 2px 8px #cccccc; -o-box-shadow: 0px 2px 8px #cccccc; -webkit-box-shadow: 0px 2px 8px #cccccc; border-radius: 5px; padding: 10px; float: left; display: block; margin: 0 30px 30px 0; }
+.product_productbg { max-width: 270px; width:100%;height: 280px; background: #ffffff; box-shadow: 0px 2px 8px #cccccc; -moz-box-shadow: 0px 2px 8px #cccccc; -ms-box-shadow: 0px 2px 8px #cccccc; -o-box-shadow: 0px 2px 8px #cccccc; -webkit-box-shadow: 0px 2px 8px #cccccc; border-radius: 5px; padding: 10px; float: left; display: block; margin: 0 30px 30px 0; }
 .productimg { width: 250px; height: 185px; text-align: center; border: 1px solid #eeeeee; overflow: hidden; }
 .product_productbg a.interior_title { color: #888888; font-size: 16px; font-weight: normal; font-family: arial; margin: 15px 0 0px 0; padding: 0 0 5px 0; border-bottom: 1px solid #cccccc; display: block; }
 .productname { color: #383838; font-size: 18px; font-family: arial; padding: 10px 0; display: block; font-weight: normal; }
@@ -83,11 +83,11 @@ p { font-size: 11px; line-height: normal; color: #fff; font-family: arial; font-
 .infoleftpan { width: 50%; min-width:200px; height: 255px; border-right: 1px solid #cccccc; text-align: center; }
 .infoleftpan img { vertical-align: middle; }
 .infoleftpan .label { vertical-align: middle; font-size: 30px; font-family: arial; color: #e95938; display: block; font-weight: normal; }
-.inforighttpan { width: 290px; }
+.inforighttpan { width: 50%; padding-left:20px; }
 .inforighttpan ul li { display: block; width: 100%; }
 .inforighttpan a { font-size: 16px; color: #383838; font-weight: normal; font-family: arial; margin: 0 0 28px 0px; display: block; }
 .inforighttpan a i { width: 30px; font-size: 18px; display: block; float: left; }
-.inforighttpan a span { display: block; float: left; max-width: 260px; }
+.inforighttpan a span { display: block; float: left; max-width: 84%; }
 .inforighttpan a:hover { font-size: 16px; color: #383838; font-weight: normal; }
 .servicesection { margin: 20px 0 0 0; padding: 20px; display: block; background: #ffffff; min-width: 320px; border-top: 5px solid #e95938; box-shadow: 0px 2px 8px #cccccc; -moz-box-shadow: 0px 2px 8px #cccccc; -ms-box-shadow: 0px 2px 8px #cccccc; -o-box-shadow: 0px 2px 8px #cccccc; -webkit-box-shadow: 0px 2px 8px #cccccc; border-radius: 5px; }
 .servicesection h1 { color: #e95938; font-family: arial; font-size: 30px; font-weight: normal; margin: 0 0 30px 0; padding: 0; text-align: center; }
