@@ -3,28 +3,34 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="" content="">
-    <title>Products</title>
+    <title>Login</title>
 
-    <!-- Mobile Specific Meta -->
-    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1" />
+<!-- Mobile Specific Meta -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <!--RESET CSS -->
-    <link rel='stylesheet' href='css/reset.css' type='text/css' media='all' />
+<!--RESET CSS -->
+<link rel='stylesheet' href='css/reset.css' type='text/css' media='all' />
 
-    <!-- jquery mobile css -->
-    <link rel='stylesheet' href='http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.css' type='text/css' media='all' />
+<!-- jQueryMobileCSS - styling-->
+<link rel="stylesheet" href="css/jqeury.mobile.theme.min.css" />
 
-    <!-- CUSTOM STYLE CSS -->
-    <link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
+<!-- jQueryMobile icons -->
+<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
 
-    <!-- CUSTOM Font CSS -->
-    <link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
+<!-- jQueryMobile core CSS -->
+<link rel="stylesheet" href="css/jquery.mobile.min.css" />
 
-    <!-- DEFAULT JS -->
-    <script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+<!-- CUSTOM STYLE CSS -->
+<link rel='stylesheet' href='css/style.css' type='text/css' media='all' />
 
-    <!-- jquery mobile js -->
-    <script type='text/javascript' src='http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js'></script>
+<!-- CUSTOM Font CSS -->
+<link rel='stylesheet' href='css/font-awesome.css' type='text/css' media='all' />
+
+<!-- DEFAULT JS -->
+<script type='text/javascript' src='http://code.jquery.com/jquery-1.10.2.min.js'></script>
+
+<!-- jquery mobile js -->
+<script type='text/javascript' src='http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js'></script>
 </head>
 
 <body>
@@ -41,18 +47,26 @@
             </div>
         </div>
         <div class="main_container">
-
+   
+            
+            
             <div class="login">
+            <div data-role="content">
             
-            <label>Email</label>
-            <input type="text" class="" id="" value="">
-            
-            <label>Password</label>
-            <input type="password" class="" id="" value="">
-            <div class="clear"></div>
+                <ul data-role="listview">
+                    <li data-role="fieldcontain">
+                        <label>Email:</label>
+                        <input data-corners="false" type="email" value="" data-clear-btn="true" placeholder="">
+                    </li>
+                    <li data-role="fieldcontain">
+                        <label>Password:</label>
+                        <input data-corners="false" type="password" value="" data-clear-btn="true" placeholder="">
+                    </li>
+                </ul>
+</div>
                 <a href="#" class="loginbtn"> Login </a>
-            
-            </div>
+
+</div>           
             
             
             <div class="clear"></div>
