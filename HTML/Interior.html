@@ -34,18 +34,24 @@
 </head>
 
 <body>
-<div class="wrapper">
-  <div class="header">
-    <div class="header_container"> <a class="pull-left nav-icons" href="#"><i class="fa fa-search"></i></a><a class="pull-right nav-icons" href="#"><i class="fa fa-user"></i></a>
-      <ul class="clearfix">
-        <li class="active"><a href="#">Interior </a></li>
-        <li class="divider"></li>
-        <li><a href="#">Products </a></li>
-      </ul>
-      <div class="clear"></div>
-    </div>
-  </div>
-  <div class="main_container">
+
+ <div data-role="page" data-theme='a'>
+    <div class="wrapper">
+        <div class="header" data-role="header" data-tap-toggle="false" data-theme='a'>
+            <div class="header_container">
+                <a data-role="none" data-rel="back" class="pull-left nav-icons" href="#"><i class="fa fa-chevron-left"></i> </a>
+                <a data-role="none" class="pull-left nav-icons" href="#"><i class="fa fa-search"></i></a>
+                <a data-role="none" class="pull-right nav-icons" href="#"><i class="fa fa-user"></i></a>
+                <ul class=" clearfix">
+                    <li class="active"><a data-role="none" href="#">Interior </a></li>
+                    <li class="divider"></li>
+                    <li><a data-role="none" href="#">Products </a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+        
+  <div data-role="content" class="main_container">
     <div class="interior">
       <ul data-role="listview" data-icon="false" data-divider-theme="a">
         <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
@@ -71,6 +77,7 @@
       </ul>
     </div>
   </div>
+</div>
 </div>
 </body>
 </html>

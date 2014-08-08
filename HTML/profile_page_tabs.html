@@ -28,26 +28,31 @@
 </head>
 
 <body>
+    <div data-role="page" data-theme='a'>
     <div class="wrapper">
-        <div class="header">
+        <div class="header" data-role="header" data-tap-toggle="false" data-theme='a'>
             <div class="header_container">
-                <a class="pull-left nav-icons" href="#"><i class="fa fa-search"></i></a><a class="pull-right nav-icons active" href="#"><i class="fa fa-user"></i></a>
-                <ul class="clearfix">
-                    <li><a href="#">Interior </a></li>
+                <a data-role="none" data-rel="back" class="pull-left nav-icons" href="#"><i class="fa fa-chevron-left"></i> </a>
+                <a data-role="none" class="pull-left nav-icons" href="#"><i class="fa fa-search"></i></a>
+                <a data-role="none" class="pull-right nav-icons" href="#"><i class="fa fa-user"></i></a>
+                <ul class=" clearfix">
+                    <li><a data-role="none" href="#">Interior </a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Products </a></li>
+                    <li><a data-role="none" href="#">Products </a></li>
                 </ul>
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="main_container">
+        <div data-role="content" class="main_container">
             <h1 class="profileheading">Profile </h1>
-            <div class="profiletab"><a href="#"><i class="fa fa-envelope-o"></i>Messages </a></div>
-            <div class="profiletab"><a href="#"><i class="fa fa-user"></i>My Profile </a></div>
-            <div class="profiletab"><a href="#"><i class="fa fa-cog"></i>Settings </a></div>
-            <div class="profiletab"><a href="#"><i class="fa fa-briefcase"></i>Company Profile </a></div>
-            <div class="profiletab nomarginbottom"><a href="#"><i class="fa fa-list-alt"></i>Shortlisted </a></div>
+            <div class="profiletab"><a data-role="none" href="#"><i class="fa fa-envelope-o"></i>Messages </a></div>
+            <div class="profiletab"><a data-role="none" href="#"><i class="fa fa-user"></i>My Profile </a></div>
+            <div class="profiletab"><a data-role="none" href="#"><i class="fa fa-cog"></i>Settings </a></div>
+            <div class="profiletab"><a data-role="none" href="#"><i class="fa fa-briefcase"></i>Company Profile </a></div>
+            <div class="profiletab nomarginbottom"><a data-role="none" href="#"><i class="fa fa-list-alt"></i>Shortlisted </a></div>
             <div class="clear"></div>
+        </div>
+        </div>
         </div>
     </div>
 </body>

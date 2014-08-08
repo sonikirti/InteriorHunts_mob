@@ -31,22 +31,23 @@
 </head>
 
 <body>
+ <div data-role="page" data-theme='a'>
     <div class="wrapper">
-        <div class="header">
+        <div class="header" data-role="header" data-tap-toggle="false" data-theme='a'>
             <div class="header_container">
-                <a class="pull-left nav-icons" href="#"><i class="fa fa-chevron-left"></i> </a>
-                <a class="pull-left nav-icons" href="#"><i class="fa fa-search"></i></a>
-                <a class="pull-right nav-icons" href="#"><i class="fa fa-user"></i></a>
+                <a data-role="none" data-rel="back" class="pull-left nav-icons" href="#"><i class="fa fa-chevron-left"></i> </a>
+                <a data-role="none" class="pull-left nav-icons" href="#"><i class="fa fa-search"></i></a>
+                <a data-role="none" class="pull-right nav-icons" href="#"><i class="fa fa-user"></i></a>
                 <ul class=" clearfix">
-                    <li><a href="#">Interior </a></li>
+                    <li><a data-role="none" href="#">Interior </a></li>
                     <li class="divider"></li>
-                    <li><a href="#">Products </a></li>
+                    <li><a data-role="none" href="#">Products </a></li>
                 </ul>
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="main_container">
-            <section class="slider">
+        <div data-role="content" class="main_container">
+            <section data-role="none" class="slider">
                 <div id="slider" class="flexslider">
                     <ul class="slides">
                         <li>
@@ -92,24 +93,28 @@
                     </ul>
                 </div>
             </section>
+            
+            
             <p class="short_detail">An established and prestigious Interior Decoration Company, professionally managed to provide all your needs in line of interior decoration. An expert in interior design located at the heart of Dubai, dedicated to design and create interiors of exceptional quality and beauty. </p>
-            <div class="info_section clearfix">
+            <div data-role="none" class="info_section clearfix">
                 <h1>Info </h1>
                 <div class="infoleftpan pull-left">
-                <span class="company_logo"> <a href="#"> </a> </span>
+                <span class="company_logo"> <a data-role="none" href="#"> </a> </span>
                 <span class="label">Decora</span> </div>
                 <div class="inforighttpan pull-right">
                     <ul>
-                        <li><a class="clearfix" href="#"><i class="fa fa-phone-square"></i><span>04 3366604 </span></a></li>
-                        <li><a class="clearfix" href="#"><i class="fa fa-envelope-o"></i><span>decoraid@aim.ae </span></a></li>
-                        <li><a class="clearfix" href="#">
+                        <li><a data-role="none" class="clearfix" href="#"><i class="fa fa-phone-square"></i><span>04 3366604 </span></a></li>
+                        <li><a data-role="none" class="clearfix" href="#"><i class="fa fa-envelope-o"></i><span>decoraid@aim.ae </span></a></li>
+                        <li><a data-role="none" class="clearfix" href="#">
                         <i class="website_icon"> </i> <span>http://decorauae.com/ </span></a></li>
-                        <li><a class="clearfix" href="#"><i class="fa fa-location-arrow"></i><span>Office 101, First Floor Pyramid Centre Umm Hurair Road Dubai, UAE PO Box 89867 </span></a></li>
-                        <li><a class="clearfix nomarginbottom" href="#"><i class="fa fa-comments-o"></i><span>Chat/Message </span></a></li>
+                        <li><a data-role="none" class="clearfix" href="#"><i class="fa fa-location-arrow"></i><span>Office 101, First Floor Pyramid Centre Umm Hurair Road Dubai, UAE PO Box 89867 </span></a></li>
+                        <li><a data-role="none" class="clearfix nomarginbottom" href="#"><i class="fa fa-comments-o"></i><span>Chat/Message </span></a></li>
                     </ul>
                 </div>
             </div>
-            <div class="servicesection clearfix">
+            
+            
+            <div data-role="none" class="servicesection clearfix">
                 <h1>Services </h1>
                 <ul>
                     <li>Flooring </li>
@@ -124,21 +129,22 @@
                     <li>Curtains & Blinds </li>
                 </ul>
             </div>
-            <div class="commentsection clearfix">
+            <div data-role="none" class="commentsection clearfix">
                 <h1>Comments </h1>
-                <input type="text" class="" value="" placeholder="Write Your Comment">
-                <a href="#" class="sendbtn">Send </a>
+                <input data-corners="false" type="text" value="" data-clear-btn="true" placeholder="Write Your Comment">
+                <a data-role="none" href="#" class="sendbtn">Send </a>
             </div>
             <div class="clear"></div>
         </div>
     </div>
+    </div>
+    
+    
 
     <!-- FlexSlider -->
     <script type='text/javascript' src='js/flexslider.js'></script>
     <script type="text/javascript">
-        $(function () {
-            SyntaxHighlighter.all();
-        });
+       
         $(window).load(function () {
             $('#carousel').flexslider({
                 animation: "slide",

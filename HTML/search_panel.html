@@ -32,69 +32,16 @@
 <!-- jquery mobile js -->
 <script type='text/javascript' src='http://code.jquery.com/mobile/1.4.1/jquery.mobile-1.4.1.min.js'></script>
 
-    <script>
-        $(document).ready(function () {
-
-            $(".open-search").click(function () {
-
-                $(".searchslide").toggleClass("searchslide-open");
-                $(this).toggleClass("search-active");
-                $(".main_container").toggleClass("main_container-right");
-            });
-
-
-        });
-    </script>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div data-role="header" data-tap-toggle="false" data-theme='a' class="header">
-            <div class="header_container">
-<a class="pull-left nav-icons open-search"href="#sidebar" data-role="none"><i class="fa fa-search"></i></a><a class="pull-right nav-icons" href="#"><i class="fa fa-user"></i></a>
-
-                <ul class="clearfix">
-                    <li><a href="#">Interior </a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Products </a></li>
-                </ul>
-                <div class="clear"></div>
-            </div>
-        </div>
-        <div class="main_container">
-    <div class="interior">
-      <ul data-role="listview" data-icon="false" data-divider-theme="a">
-        <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
-          <h1> Innov8 Group </h1>
-          <p> What makes us different is our commitment to go the extra mile in meeting all of your requirements, be it for choice </p>
-          <p class="options"> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-comment-o"></i>100 </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-thumbs-o-up"></i>1.2k </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-eye"></i>1.2k </a> </p>
-        </li>
-        <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
-          <h1> Innov8 Group </h1>
-          <p> What makes us different is our commitment to go the extra mile in meeting all of your requirements, be it for choice </p>
-          <p class="options"> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-comment-o"></i>100 </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-thumbs-o-up"></i>1.2k </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-eye"></i>1.2k </a> </p>
-        </li>
-        <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
-          <h1> Innov8 Group </h1>
-          <p> What makes us different is our commitment to go the extra mile in meeting all of your requirements, be it for choice </p>
-          <p class="options"> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-comment-o"></i>100 </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-thumbs-o-up"></i>1.2k </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-eye"></i>1.2k </a> </p>
-        </li>
-        <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
-          <h1> Innov8 Group </h1>
-          <p> What makes us different is our commitment to go the extra mile in meeting all of your requirements, be it for choice </p>
-          <p class="options"> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-comment-o"></i>100 </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-thumbs-o-up"></i>1.2k </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-eye"></i>1.2k </a> </p>
-        </li>
-      </ul>
-    </div>
-        </div>
-        
-        
-        
-        
-        
+ <div data-role="page" data-theme='a'>
+ 
+ 
         
         <div data-role="panel" data-display="push" id="sidebar" data-theme="a">
-        <div class="searchslide  data-role="listview"">
+        
+        <div class="searchslide"  data-role="listview">
             <div class="slidetab">
                 <ul>
                     <li class="active"><a href="#">General Services <i class="fa fa-chevron-right"></i></a></li>
@@ -162,7 +109,57 @@
             
         </div>
         </div>
+ 
+ 
+ 
+  
+        <div class="header" data-role="header" data-tap-toggle="false" data-theme='a'>
+            <div class="header_container">
+                <a data-role="none" data-rel="back" class="pull-left nav-icons" href="#"><i class="fa fa-chevron-left"></i> </a>
+                <a data-role="none" class="pull-left nav-icons" href="#sidebar"><i class="fa fa-search"></i></a>
+                <a data-role="none" class="pull-right nav-icons" href="#"><i class="fa fa-user"></i></a>
+                <ul class=" clearfix">
+                    <li><a data-role="none" href="#">Interior </a></li>
+                    <li class="divider"></li>
+                    <li><a data-role="none" href="#">Products </a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
         
+        
+        
+        <div data-role="content" class="main_container">
+    <div class="interior">
+      <ul data-role="listview" data-icon="false" data-divider-theme="a">
+        <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
+          <h1> Innov8 Group </h1>
+          <p> What makes us different is our commitment to go the extra mile in meeting all of your requirements, be it for choice </p>
+          <p class="options"> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-comment-o"></i>100 </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-thumbs-o-up"></i>1.2k </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-eye"></i>1.2k </a> </p>
+        </li>
+        <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
+          <h1> Innov8 Group </h1>
+          <p> What makes us different is our commitment to go the extra mile in meeting all of your requirements, be it for choice </p>
+          <p class="options"> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-comment-o"></i>100 </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-thumbs-o-up"></i>1.2k </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-eye"></i>1.2k </a> </p>
+        </li>
+        <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
+          <h1> Innov8 Group </h1>
+          <p> What makes us different is our commitment to go the extra mile in meeting all of your requirements, be it for choice </p>
+          <p class="options"> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-comment-o"></i>100 </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-thumbs-o-up"></i>1.2k </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-eye"></i>1.2k </a> </p>
+        </li>
+        <li class="productbg" data-theme="b"> <span class="imagepan"> <img src="image/img.jpg"> </span>
+          <h1> Innov8 Group </h1>
+          <p> What makes us different is our commitment to go the extra mile in meeting all of your requirements, be it for choice </p>
+          <p class="options"> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-comment-o"></i>100 </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-thumbs-o-up"></i>1.2k </a> <a class="ui-tag" data-theme="a" href="#"> <i class="fa fa-eye"></i>1.2k </a> </p>
+        </li>
+      </ul>
+    </div>
+        </div>
+        
+        
+        
+        
+   
         
     </div>
 </body>
